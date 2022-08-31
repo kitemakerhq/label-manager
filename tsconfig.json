@@ -9,7 +9,7 @@
     "sourceMap": true,
     "inlineSources": true,
     "sourceRoot": "/",
-    "lib": ["es2019", "dom"],
+    "lib": ["es2019"],
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -19,11 +19,14 @@
     "strict": true,
     "moduleResolution": "node",
     "stripInternal": true,
-    "target": "ES5",
+    "target": "es2017",
+    "module": "CommonJS",
     "types": ["node"],
     "resolveJsonModule": true,
     "noEmitHelpers": true,
-    "importHelpers": true
+    "importHelpers": true,
+    "useUnknownInCatchVariables": false,
+    "isolatedModules": true
   },
-  "exclude": [".vscode", "node_modules", "yarn.lock"]
+  "exclude": [".cache", ".content", ".github", ".vscode", "yarn.lock"]
 }
