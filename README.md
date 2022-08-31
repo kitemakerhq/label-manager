@@ -25,3 +25,17 @@ yarn
 export KITEMAKER_TOKEN=<your-kitemaker-api-token>
 yarn swap --space=0687e24ab416b000 --to-replace=1161ff8edca20000 --replace-with=0687e27c45a6b000
 ```
+
+Use the `create-labels` script to create a set of labels across all spaces in an organization
+
+Options:
+
+- `--labels`: A comma-separated list of labels to create (e.g. -l Bug,Feature). If you wish to specify the color, separate it from the name with a ':' (e.g. -l Bug:FF000)
+- `--omit-spaces`: A list of space names or keys in which you should not create the labels
+- `--dry-run`: Print which labels the script would create but don't actually create them
+
+```bash
+yarn
+export KITEMAKER_TOKEN=<your-kitemaker-api-token>
+yarn create-labels --omit-spaces=Marketing,HR -l Bug:ff0000,Feature:00ff00
+```

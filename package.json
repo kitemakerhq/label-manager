@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "list-all": "ts-node-dev --quiet list.ts",
-    "swap": "ts-node-dev --quiet swap.ts"
+    "swap": "ts-node-dev --quiet swap.ts",
+    "create-labels": "ts-node-dev --quiet create.ts"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.0.0",
@@ -16,7 +17,7 @@
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.2.1",
-    "ts-node-dev": "^1.1.6",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.2"
   },
   "dependencies": {
